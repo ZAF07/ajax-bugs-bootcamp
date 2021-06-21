@@ -1,13 +1,11 @@
-import db from './index.mjs';
-
 export default function initBugModel(sequelize, DataType) {
   return sequelize.define(
-    'define', {
+    'bug', {
       id: {
         type: DataType.INTEGER,
         primaryKey: true,
         allowNull: false,
-        autoIncrement: false,
+        autoIncrement: true,
       },
       problem: {
         allowNull: false,
@@ -20,6 +18,10 @@ export default function initBugModel(sequelize, DataType) {
       commit: {
         allowNull: true,
         type: DataType.STRING,
+      },
+      featureId: {
+        type: DataType.INTEGER,
+        allowNull: false,
       },
     },
     { underscored: true },

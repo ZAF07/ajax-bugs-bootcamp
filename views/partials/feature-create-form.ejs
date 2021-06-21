@@ -1,0 +1,27 @@
+<%- include ('./header.ejs') %>
+
+<button class="hide-feature-form">Hide form</button>
+
+<div class="container custom-feature-form"
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 m-auto">
+      <form>
+        <div class="form-group">
+          <label for="exampleformcontrolinput1">Feature Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="feature"
+            placeholder="New Feature"
+            name="problem"
+            required
+          />
+        </div>
+        <input id="submit-feature" type="submit" value="submit" name="submit-feature">
+      </form>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+<%- include ('./footer.ejs') %>

@@ -1,0 +1,35 @@
+.custom-bug-form,
+.custom-feature-form,
+.hide-feature-form,
+.hide-bug-form {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.custom-alert {
+  visibility: hidden;
+  animation: msg 3s;
+}
+
+@keyframes msg {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0.5;
+  }
+}
