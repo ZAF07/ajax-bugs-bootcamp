@@ -39,7 +39,7 @@ const apiCall = async () => {
       root.appendChild(card);
     });
 
-    console.log(api.data);
+    console.log('DATA FROM BUGS API CALL -->', api.data);
   } catch (error) {
     console.log(error);
   }
@@ -82,6 +82,9 @@ submitFeatureBtn.addEventListener('click', async (e) => {
   await axios.post('/new-feature', { newFeature: newFeatureToAdd.value })
     .then((res) => {
       console.log(res);
+    })
+    .then(() => {
+      newFeatureToAdd.value = '';
     });
 });
 

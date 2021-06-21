@@ -22,14 +22,6 @@
           <label for="selection">Features</label>
           <select class="form-control" id="selection" name="featureId" required>
             <option value="" default>None</option>
-            <% features.forEach(feature => { %>
-            <option value="<%= feature.id%>"><%= feature.name %></option>
-            <% }) %>
-
-            <!-- <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option> -->
           </select>
         </div>
 
